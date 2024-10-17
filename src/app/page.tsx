@@ -5,12 +5,12 @@ function App() {
   return (
     <div className="container">
       <div className="logoContainer">
-        <img src="logo.jpg" alt="logo"/>
+        <img src="logo.png" alt="logo"/>
       </div>
       
       
       <div className="eyeContainer">
-        <img src="eye.jpg" alt="eye"/>
+        <img src="eye.png" alt="eye"/>
       </div>
 
       <div className="socialIcons">
@@ -32,7 +32,7 @@ function App() {
         <a href="https://www.tiktok.com/@mistcreep" target="_blank" rel="noopener noreferrer">
           <img className="icon" src="tiktok.png" alt="TikTok" />
         </a>
-        
+
       </div>
     </div>
   );

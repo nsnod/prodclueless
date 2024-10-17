@@ -22,11 +22,11 @@ html, body {
   width: 100%; /* Full width for responsiveness */
   text-align: center;
   background-color: white; /* Ensure the logo section has a white background */
-  margin-bottom: -2rem; /* Adds space below the logo */
+  margin-bottom: -7rem; /* Adds space below the logo */
 }
 
 .logoContainer img {
-  width: 60vw; /* Scales based on the viewport width */
+  width: 70vw; /* Scales based on the viewport width */
   height: auto; /* Maintain aspect ratio */
 }
 
