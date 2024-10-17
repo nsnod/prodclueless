@@ -4,8 +4,15 @@ import './globals.css';
 function App() {
   return (
     <div className="container">
-      <h1 className="title">mistcreep</h1>
+      <div className="logoContainer">
+        <img src="logo.jpg" alt="logo"/>
+      </div>
       
+      
+      <div className="eyeContainer">
+        <img src="eye.jpg" alt="eye"/>
+      </div>
+
       <div className="socialIcons">
         <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
           <img className="icon" src="spotify.png" alt="Spotify" />
@@ -25,43 +32,7 @@ function App() {
         <a href="https://www.tiktok.com/@mistcreep" target="_blank" rel="noopener noreferrer">
           <img className="icon" src="tiktok.png" alt="TikTok" />
         </a>
-      </div>
-      
-      <div className="eyeContainer">
-        <img src="eyee.png" alt="eye"/>
-      </div>
-      
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-      <p className="caption">thank you for letting me look into your eyes</p>
-
-
-      <div className="headImage">
-        <img src="head.png" alt="head"/>
+        
       </div>
     </div>
   );
