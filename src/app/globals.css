@@ -2,31 +2,44 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white;
+  background-color: #fffcfc;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
+.whiteCover {
+  position: absolute;
+  bottom: -39vh; /* Aligns it to the bottom of eyeContainer */
+  left: 0;
+  width: 100%;
+  background-color: #fffcfc; /* Matches your page background */
+  height: 40vh; /* Adjust as needed to cover the overflow */
+  z-index: 100; /* Ensure it's below the eye image */
+}
+
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: white;
+  background-color: #fffcfc;
 }
 
 .logoContainer {
   width: 100%;
   text-align: center;
-  background-color: white;
+  background-color: #fffcfc;
   margin-bottom: -7rem;
+  z-index: 9;
 }
 
 .logoContainer img {
-  width: 70vw;
+  width: 80vw;
   height: auto;
+  z-index: 9;
 }
 
 .socialIcons {
@@ -50,7 +63,8 @@ html, body {
 /* Adjusted Eye Container */
 .eyeContainer {
   position: relative;
-  width: 70vw; /* Adjust as needed */
+  width: 90vw; /* Adjust as needed */
+  transform: translateY(12vh);
   height: auto;
   margin: 0 auto; /* Centers the eyeContainer */
 }
@@ -77,7 +91,7 @@ html, body {
 /* Adjusted Layer Images */
 .layer {
   position: absolute;
-  width: 100%;
+  width: 70vw;
   height: auto;
   left: 50%;
   top: 50%;
