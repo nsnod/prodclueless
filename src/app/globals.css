@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white; /* Ensure background is fully white */
+  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -14,20 +14,19 @@ html, body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: white; /* Ensure container background is white */
+  background-color: white;
 }
 
-/* Logo Container (will not stick to the top anymore) */
 .logoContainer {
-  width: 100%; /* Full width for responsiveness */
+  width: 100%;
   text-align: center;
-  background-color: white; /* Ensure the logo section has a white background */
-  margin-bottom: -7rem; /* Adds space below the logo */
+  background-color: white;
+  margin-bottom: -7rem;
 }
 
 .logoContainer img {
-  width: 70vw; /* Scales based on the viewport width */
-  height: auto; /* Maintain aspect ratio */
+  width: 70vw;
+  height: auto;
 }
 
 .socialIcons {
@@ -48,22 +47,53 @@ html, body {
   opacity: 0.5;
 }
 
-/* Eye container with white background fix */
+/* Adjusted Eye Container */
 .eyeContainer {
-  width: 90vw;
-  margin: 2vw 0;
-  background-color: white; /* Ensures background is white behind the image */
+  position: relative;
+  width: 70vw; /* Adjust as needed */
+  height: auto;
+  margin: 0 auto; /* Centers the eyeContainer */
 }
 
-.eyeContainer img {
+/* Adjusted Eye Image */
+.eye {
   width: 100%;
   height: auto;
-  background-color: white; /* Also ensure the image itself sits on a white background */
+  z-index: 10;
+  position: relative;
+}
+
+/* Adjusted Parallax Container */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Matches the width of eyeContainer */
+  height: 100%; /* Matches the height of eyeContainer */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Adjusted Layer Images */
+.layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Ensure Layer Images Don't Exceed Container Size */
+.layer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .title {
-    font-size: 6vw;
+  .logoContainer img {
+    width: 40vw;
   }
 
   .socialIcons {
@@ -75,14 +105,6 @@ html, body {
   }
 
   .eyeContainer {
-    width: 70vw;
-  }
-
-  .caption {
-    font-size: 3vw;
-  }
-
-  .logoContainer img {
-    width: 40vw; /* Make the logo smaller for smaller screens */
+    width: 90vw; /* Adjust for smaller screens */
   }
 }

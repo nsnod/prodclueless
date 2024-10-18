@@ -8,31 +8,18 @@ function App() {
         <img src="logo.png" alt="logo"/>
       </div>
       
-      
       <div className="eyeContainer">
-        <img src="eye.png" alt="eye"/>
+        <img src="eye.png" className="eye" alt="eye" />
+        <div className="parallax">
+          <img src="upper.png" className="layer layer-back" alt="upper" />
+          <img src="middle.png" className="layer layer-middle" alt="middle" />
+          <img src="secondtrees.png" className="layer layer-second-trees" alt="second trees" />
+          <img src="lowertrees.png" className="layer layer-lower-trees" alt="lower trees" />
+          <img src="clueless.png" className="layer layer-front" alt="clueless" />
+        </div>
       </div>
 
       <div className="socialIcons">
-        <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="spotify.png" alt="Spotify" />
-        </a>
-        <a href="https://soundcloud.com/mistcreep-259157587" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="soundcloud.png" alt="SoundCloud" />
-        </a>
-        <a href="https://www.instagram.com/mistcreeep/" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="insta.png" alt="Instagram" />
-        </a>
-        <a href="https://www.youtube.com/@mistcreeep" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="youtube.png" alt="YouTube" />
-        </a>
-        <a href="https://www.linkedin.com/in/mist-creep-0ab145330/" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.tiktok.com/@mistcreep" target="_blank" rel="noopener noreferrer">
-          <img className="icon" src="tiktok.png" alt="TikTok" />
-        </a>
-
       </div>
     </div>
   );
