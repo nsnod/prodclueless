@@ -9,17 +9,12 @@ html, body {
 }
 
 .whiteCover {
-  position: absolute;
-  bottom: -39vh; /* Aligns it to the bottom of eyeContainer */
-  left: 0;
   width: 100%;
-  background-color: #fffcfc; /* Matches your page background */
-  height: 40vh; /* Adjust as needed to cover the overflow */
-  z-index: 100; /* Ensure it's below the eye image */
+  background-color: #fffcfc; 
+  height: -30vh; 
 }
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +24,6 @@ html, body {
 }
 
 .logoContainer {
-  width: 100%;
   text-align: center;
   background-color: #fffcfc;
   margin-bottom: -7rem;
@@ -37,7 +31,7 @@ html, body {
 }
 
 .logoContainer img {
-  width: 80vw;
+  width: 70vw; 
   height: auto;
   z-index: 9;
 }
@@ -60,65 +54,41 @@ html, body {
   opacity: 0.5;
 }
 
-/* Adjusted Eye Container */
 .eyeContainer {
   position: relative;
-  width: 90vw; /* Adjust as needed */
-  transform: translateY(12vh);
-  height: auto;
-  margin: 0 auto; /* Centers the eyeContainer */
+  height: 80vh;
+  width: 80vw; 
+  transform: translateY(14vh);
 }
 
-/* Adjusted Eye Image */
 .eye {
   width: 100%;
   height: auto;
-  z-index: 10;
+  z-index: 15;
   position: relative;
 }
 
-/* Adjusted Parallax Container */
 .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Matches the width of eyeContainer */
-  height: 100%; /* Matches the height of eyeContainer */
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
-/* Adjusted Layer Images */
+
 .layer {
   position: absolute;
+  max-width: 150vw;
+  max-height: 150vh;
+  min-width: 10vw;
+  min-height: 10vh;
   width: 70vw;
   height: auto;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 45pt;
+  transform: translateX(-50%); 
 }
 
-/* Ensure Layer Images Don't Exceed Container Size */
 .layer img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .logoContainer img {
-    width: 40vw;
-  }
-
-  .socialIcons {
-    gap: 3vw;
-  }
-
-  .socialIcons .icon {
-    width: 7vw;
-  }
-
-  .eyeContainer {
-    width: 90vw; /* Adjust for smaller screens */
-  }
 }
