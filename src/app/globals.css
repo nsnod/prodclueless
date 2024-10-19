@@ -9,9 +9,12 @@ html, body {
 }
 
 .whiteCover {
-  width: 100%;
+  position: relative;
+  width: auto;
   background-color: #fffcfc; 
-  height: -30vh; 
+  height: 70vh; 
+  transform: translateY(-6pt);
+  z-index: 999;
 }
 
 .container {
@@ -67,13 +70,6 @@ html, body {
   z-index: 15;
   position: relative;
 }
-
-.parallax {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 
 .layer {
   position: absolute;

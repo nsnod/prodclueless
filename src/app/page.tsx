@@ -16,8 +16,8 @@ function App() {
           <img src="secondtrees.png" className="layer layer-second-trees" alt="second trees" />
           <img src="lowertrees.png" className="layer layer-lower-trees" alt="lower trees" />
           <img src="clueless.png" className="layer layer-front" alt="clueless" />
-          <div className="whiteCover"></div>
         </div>
+        <div className="whiteCover"></div>
       </div>
 
       <div className="socialIcons"></div>
