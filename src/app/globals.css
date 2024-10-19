@@ -12,8 +12,8 @@ html, body {
   position: relative;
   width: auto;
   background-color: #fffcfc;
-  /* KEEP THIS VH AT 31 MINIMUM IT CONTROLS THE BOTTOM WHITE LENGTH*/ 
-  height: 31vh; 
+  /* KEEP THIS VH AT 50 MINIMUM IT CONTROLS THE BOTTOM WHITE LENGTH*/ 
+  height: 50vh; 
   transform: translateY(-6pt);
   z-index: 999;
 }
