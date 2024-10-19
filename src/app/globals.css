@@ -11,8 +11,9 @@ html, body {
 .whiteCover {
   position: relative;
   width: auto;
-  background-color: #fffcfc; 
-  height: 70vh; 
+  background-color: #fffcfc;
+  /* KEEP THIS VH AT 30 MINIMUM IT CONTROLS THE BOTTOM WHITE LENGTH*/ 
+  height: 30vh; 
   transform: translateY(-6pt);
   z-index: 999;
 }
@@ -73,8 +74,8 @@ html, body {
 
 .layer {
   position: absolute;
-  max-width: 150vw;
-  max-height: 150vh;
+  max-width: 200vw;
+  max-height: 200vh;
   min-width: 10vw;
   min-height: 10vh;
   width: 70vw;
