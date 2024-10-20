@@ -74,13 +74,13 @@ html, body {
 
 .layer {
   position: absolute;
-  max-width: 200vw;
-  max-height: 200vh;
+  max-width: 150vw;
+  max-height: 150vh;
   min-width: 10vw;
   min-height: 10vh;
   width: 70vw;
   height: auto;
-  top: 45pt;
+  top: 200pt;
   transform: translateX(-50%); 
 }
 
