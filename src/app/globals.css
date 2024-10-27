@@ -12,8 +12,7 @@ html, body {
   position: relative;
   width: auto;
   background-color: #fffcfc;
-  /* KEEP THIS VH AT 50 MINIMUM IT CONTROLS THE BOTTOM WHITE LENGTH*/ 
-  height: 50vh; 
+  height: 50vh;
   transform: translateY(-6pt);
   z-index: 999;
 }
@@ -35,7 +34,7 @@ html, body {
 }
 
 .logoContainer img {
-  width: 70vw; 
+  width: 70vw;
   height: auto;
   z-index: 9;
 }
@@ -49,7 +48,7 @@ html, body {
 }
 
 .socialIcons .icon {
-  width: 13vw; 
+  width: 13vw;
   height: auto;
 }
 
@@ -60,30 +59,44 @@ html, body {
 
 .eyeContainer {
   position: relative;
-  height: 90vh;
-  width: 90vw; 
-  transform: translateY(14vh);
+  width: 90vw;
+  margin: 15vh;
+}
+
+.eyeWrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure this fills the eyeWrapper */
 }
 
 .eye {
+  position: relative;
   width: 100%;
   height: auto;
-  z-index: 15;
-  position: relative;
+  display: block;
+  z-index: 2; /* Set a higher z-index */
 }
 
 .layer {
   position: absolute;
-  min-width: 10vw;
-  min-height: 10vh;
-  width: 70vw;
+  top: 25%; /* Shift layers down by 10 pixels */
+  left: 0;
+  width: 100%;
   height: auto;
-  top: 49vh;
-  transform: translateX(-50%); 
+  will-change: transform;
 }
 
 .layer img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
