@@ -1,11 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: #fffcfc;
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .whiteCover {
@@ -14,14 +11,13 @@ html, body {
   background-color: #fffcfc;
   height: 50vh;
   transform: translateY(-6pt);
-  z-index: 999;
+  z-index: 300;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   text-align: center;
   background-color: #fffcfc;
 }
@@ -34,7 +30,7 @@ html, body {
 }
 
 .logoContainer img {
-  width: 70vw;
+  width: 80vw;
   height: auto;
   z-index: 9;
 }
@@ -75,7 +71,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Ensure this fills the eyeWrapper */
+  height: 100%; 
 }
 
 .eye {
@@ -83,12 +79,12 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
-  z-index: 2; /* Set a higher z-index */
+  z-index: 2; 
 }
 
 .layer {
   position: absolute;
-  top: 25%; /* Shift layers down by 10 pixels */
+  top: 25%; 
   left: 0;
   width: 100%;
   height: auto;
@@ -99,4 +95,126 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.bioSection {
+  text-align: center;
+  width: 70vw;
+  height: auto; 
+  margin: calc(-60vh) auto 15vh; 
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  background-color: #fffcfc;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 400;
+  position: relative;
+}
+
+.bioSection h2 {
+  font-size: clamp(1.8rem, 2.5vw, 3rem); 
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.bioSection p {
+  font-size: clamp(1rem, 1.5vw, 2rem); 
+  margin-bottom: 2rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem; 
+}
+
+.social-icon {
+  width: 95px;
+  height: 95px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; 
+  background: none; 
+  box-shadow: none; 
+}
+
+.social-icon:hover {
+  transform: scale(1.1); 
+}
+
+.footer {
+  width: 100%;
+  text-align: left;
+  margin-top: auto; 
+  margin-bottom: 2rem;
+}
+
+.footer-content {
+  padding: 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem); 
+}
+
+.footer-logo {
+  max-width: 50px; 
+  max-height: 50px;  
+  width: auto;
+  height: auto;
+  margin: -0.3rem; 
+}
+
+.footer-content a {
+  text-decoration: underline;
+  color: #000000;
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.footer-content a:hover {
+  color: #d94949;
+}
+
+@media (max-width: 768px) {
+  .bioSection {
+    padding: 1.5rem;
+    max-width: 90%; 
+  }
+
+  .bioSection h2 {
+    font-size: 1.2rem; 
+  }
+
+  .bioSection p {
+    font-size: 0.9rem; 
+  }
+
+  .socialIcons {
+    gap: 1rem; 
+    padding-bottom: 2rem;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-content {
+    padding: 0.5rem;
+    font-size: clamp(0.7rem, 2vw, 1rem); 
+  }
+
+  .footer-content a {
+    font-size: inherit;
+  }
+
+  .footer-logo {
+    max-width: 40px;   
+    max-height: 40px; 
+  }
+
 }
