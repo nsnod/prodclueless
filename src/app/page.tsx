@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
+import BackgroundAudio from './BackgroundAudio';
 import './globals.css';
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
       <div className="logoContainer">
         <img src="simplelogo-1.png" alt="logo" />
       </div>
+
+      <BackgroundAudio />
 
       <div className="eyeContainer">
         <div className="eyeWrapper">
@@ -107,7 +110,6 @@ function App() {
           </a>
         </div>
       </footer>
-
     </div>
   );
 }
