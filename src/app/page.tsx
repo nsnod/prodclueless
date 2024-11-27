@@ -55,34 +55,41 @@ function App() {
         <div className="whiteCover"></div>
       </div>
 
-      <div className="bioSection">
-        <h2>prodclueless</h2>
-        <p>
-          god ur clueless
-        </p>
 
-        <div className="socialIcons">
-          <a href="https://open.spotify.com/artist/6JsakuHNJCFmLAVvhpjHLz?si=aDVrMJrMTkqO0aBn-fMMfQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=76b2aeca904d48ee" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="spotify.png" alt="Spotify" />
-          </a>
-          <a href="https://www.youtube.com/@prodclueless" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="youtube.png" alt="YouTube" />
-          </a>
-          <a href="https://www.beatstars.com/prodclueless" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="beatstars.png" alt="BeatStars" />
-          </a>
-          <a href="https://soundcloud.com/clueless27" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="soundcloud.png" alt="SoundCloud" />
-          </a>
-          <a href="https://www.fiverr.com/prodclueless/mix-and-produce-your-music-with-a-professional-sound?utm_campaign=gigs_show&utm_medium=shared&utm_source=copy_link&utm_term=b4ebbk" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="fiver.png" alt="Fiverr" />
-          </a>
-          <a href="https://www.instagram.com/prodclueless/" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="instagram.png" alt="Instagram" />
-          </a>
-          <a href="https://www.patreon.com/prodcluelesspacks" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src="patreon.png" alt="Patreon" />
-          </a>
+      <div className="bioWrapper">
+        <img src="tree.png" alt="Trees" className="treesImage" />
+        
+        <div className="bioSection">
+
+
+            <h2>prodclueless</h2>
+            <p>
+              god ur clueless
+            </p>
+
+            <div className="socialIcons">
+              <a href="https://open.spotify.com/artist/6JsakuHNJCFmLAVvhpjHLz?si=aDVrMJrMTkqO0aBn-fMMfQ&utm_medium=share&utm_source=linktree&nd=1&dlsi=76b2aeca904d48ee" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="spotify.png" alt="Spotify" />
+              </a>
+              <a href="https://www.youtube.com/@prodclueless" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="youtube.png" alt="YouTube" />
+              </a>
+              <a href="https://www.beatstars.com/prodclueless" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="beatstars.png" alt="BeatStars" />
+              </a>
+              <a href="https://soundcloud.com/clueless27" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="soundcloud.png" alt="SoundCloud" />
+              </a>
+              <a href="https://www.fiverr.com/prodclueless/mix-and-produce-your-music-with-a-professional-sound?utm_campaign=gigs_show&utm_medium=shared&utm_source=copy_link&utm_term=b4ebbk" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="fiver.png" alt="Fiverr" />
+              </a>
+              <a href="https://www.instagram.com/prodclueless/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="instagram.png" alt="Instagram" />
+              </a>
+              <a href="https://www.patreon.com/prodcluelesspacks" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <img src="patreon.png" alt="Patreon" />
+              </a>
+            </div>
         </div>
       </div>
 

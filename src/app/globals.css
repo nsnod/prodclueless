@@ -1,9 +1,12 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
   background-color: #fffcfc;
   text-align: center;
+  overflow-x: hidden;
+  max-width: 100%;
 }
+
 
 .whiteCover {
   position: relative;
@@ -12,6 +15,7 @@ html, body {
   height: 50vh;
   transform: translateY(-6pt);
   z-index: 300;
+  overflow: hidden;
 }
 
 .container {
@@ -86,6 +90,7 @@ html, body {
   position: absolute;
   top: 25%; 
   left: 0;
+  right: 0;
   width: 100%;
   height: auto;
   will-change: transform;
@@ -98,10 +103,11 @@ html, body {
 }
 
 .bioSection {
+  position: relative;
   text-align: center;
   width: 70vw;
   height: auto; 
-  margin: calc(-60vh) auto 15vh; 
+  margin: -25vh auto 15vh; 
   padding: 2rem 1rem;
   max-width: 1200px;
   background-color: #fffcfc;
@@ -109,7 +115,20 @@ html, body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 400;
-  position: relative;
+}
+
+.bioWrapper {
+  position: relative; 
+  width: 100%; 
+}
+
+.treesImage {
+  position: absolute;
+  top: -75vh; 
+  left: -28%;
+  width: 150vw;
+  height: auto;
+  z-index: 350; 
 }
 
 .bioSection h2 {
@@ -152,8 +171,9 @@ html, body {
 .footer {
   width: 100%;
   text-align: left;
-  margin-top: auto; 
   margin-bottom: 2rem;
+  transform: translateY(35vh);
+  z-index: 999;
 }
 
 .footer-content {
@@ -180,9 +200,14 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .treesImage {
+    top: -60vw; 
+  }
+
   .bioSection {
     padding: 1.5rem;
     max-width: 90%; 
+    margin: -40vh auto 15vh; 
   }
 
   .bioSection h2 {
@@ -203,6 +228,10 @@ html, body {
     height: 50px;
   }
 
+  .footer {
+    transform: translateY(10vh);
+  }
+
   .footer-content {
     padding: 0.5rem;
     font-size: clamp(0.7rem, 2vw, 1rem); 
@@ -216,5 +245,4 @@ html, body {
     max-width: 40px;   
     max-height: 40px; 
   }
-
 }
