@@ -64,7 +64,7 @@ function App() {
 
             <h2>prodclueless</h2>
             <p>
-              god ur clueless
+              tutorials, beats, and serum presets
             </p>
 
             <div className="socialIcons">
