@@ -106,7 +106,6 @@ function App() {
             className="footer-link"
           >
             mistcreep
-            <img src="mistcreeplogo.png" alt="mistcreep logo" className="footer-logo" />
           </a>
         </div>
       </footer>
