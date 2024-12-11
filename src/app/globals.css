@@ -7,17 +7,6 @@ body {
   max-width: 100%;
 }
 
-
-.whiteCover {
-  position: relative;
-  width: auto;
-  background-color: #fffcfc;
-  height: 50vh;
-  transform: translateY(-6pt);
-  z-index: 300;
-  overflow: hidden;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -104,17 +93,17 @@ body {
 
 .bioWrapper {
   position: relative;
-  width: 150vw;
+  width: 100vw;
   height: 150vh;
   background: url('/tree.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   overflow: visible;
   z-index: 350;
 }
 
 .bioSection {
   position: absolute;
-  top: 50%;  
+  top: 47%;  
   margin: 0 auto; 
   left: 50%;
   transform: translate(-50%, -50%);
@@ -198,10 +187,10 @@ body {
 
 @media (max-width: 768px) {
 
-
   .bioWrapper {
-    width: 200vw;
-    height: 200vh;
+    width: 100vw;
+    height: 80vh;
+    top: -10vh;
   }
 
   .socialIcons {
