@@ -102,43 +102,40 @@ body {
   display: block;
 }
 
-.bioSection {
+.bioWrapper {
   position: relative;
-  text-align: center;
+  width: 150vw;
+  height: 150vh;
+  background: url('/tree.png') no-repeat center center;
+  background-size: contain;
+  overflow: visible;
+  z-index: 350;
+}
+
+.bioSection {
+  position: absolute;
+  top: 50%;  
+  margin: 0 auto; 
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70vw;
-  height: auto; 
-  margin: -25vh auto 15vh; 
-  padding: 2rem 1rem;
   max-width: 1200px;
+  padding: 2rem 1rem;
   background-color: #fffcfc;
   border: 2px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 400;
-}
-
-.bioWrapper {
-  position: relative; 
-  width: 100%; 
-}
-
-.treesImage {
-  position: absolute;
-  top: -70vh; 
-  left: -28%;
-  width: 150vw;
-  height: auto;
-  z-index: 350; 
+  z-index: 1; /* Ensure it stays on top of the background */
 }
 
 .bioSection h2 {
-  font-size: clamp(1.8rem, 2.5vw, 3rem); 
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
   margin-bottom: 1rem;
   color: #333;
 }
 
 .bioSection p {
-  font-size: clamp(1rem, 1.5vw, 2rem); 
+  font-size: clamp(1rem, 1.5vw, 2rem);
   margin-bottom: 2rem;
 }
 
@@ -169,10 +166,10 @@ body {
 }
 
 .footer {
+  position: relative;
   width: 100%;
   text-align: left;
   margin-bottom: 2rem;
-  transform: translateY(35vh);
   z-index: 999;
 }
 
@@ -196,26 +193,15 @@ body {
 }
 
 .footer-content a:hover {
-  color: #d94949;
+  color: #ff0000;
 }
 
 @media (max-width: 768px) {
-  .treesImage {
-    top: -60vw; 
-  }
 
-  .bioSection {
-    padding: 1.5rem;
-    max-width: 90%; 
-    margin: -40vh auto 15vh; 
-  }
 
-  .bioSection h2 {
-    font-size: 1.2rem; 
-  }
-
-  .bioSection p {
-    font-size: 0.9rem; 
+  .bioWrapper {
+    width: 200vw;
+    height: 200vh;
   }
 
   .socialIcons {
@@ -226,23 +212,5 @@ body {
   .social-icon {
     width: 50px;
     height: 50px;
-  }
-
-  .footer {
-    transform: translateY(10vh);
-  }
-
-  .footer-content {
-    padding: 0.5rem;
-    font-size: clamp(0.7rem, 2vw, 1rem); 
-  }
-
-  .footer-content a {
-    font-size: inherit;
-  }
-
-  .footer-logo {
-    max-width: 40px;   
-    max-height: 40px; 
   }
 }

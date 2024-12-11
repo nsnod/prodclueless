@@ -48,10 +48,10 @@ function App() {
         <div className="eyeWrapper">
           <img src="eyewithwhite.png" className="eye" alt="eye" />
           <div className="parallax">
-            <img src="upper.png" className="layer" data-speed="0.3" alt="upper" />
-            <img src="middle.png" className="layer" data-speed="0.4" alt="middle" />
-            <img src="secondtrees.png" className="layer" data-speed="0.5" alt="second trees" />
-            <img src="lowertrees.png" className="layer" data-speed="0.6" alt="lower trees" />
+            <img src="upper.png" className="layer" data-speed="0.2" alt="upper" />
+            <img src="middle.png" className="layer" data-speed="0.3" alt="middle" />
+            <img src="secondtrees.png" className="layer" data-speed="0.4" alt="second trees" />
+            <img src="lowertrees.png" className="layer" data-speed="0.5" alt="lower trees" />
             <img src="clueless.png" className="layer" data-speed="0.7" alt="clueless" />
           </div>
         </div>
@@ -59,9 +59,7 @@ function App() {
       </div>
 
 
-      <div className="bioWrapper">
-        <img src="tree.png" alt="Trees" className="treesImage" />
-        
+      <div className="bioWrapper">        
         <div className="bioSection">
 
 
