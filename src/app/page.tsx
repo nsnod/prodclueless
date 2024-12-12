@@ -38,9 +38,6 @@ function App() {
 
   return (
     <div className="container">
-      <div className="logoContainer">
-        <img src="simplelogo-1.png" alt="logo" />
-      </div>
 
       <BackgroundAudio />
 
@@ -63,7 +60,9 @@ function App() {
         <div className="bioSection">
 
 
-            <h2>prodclueless</h2>
+            <div className="logoContainer">
+              <img src="simplelogo-1.png" alt="logo" />
+            </div>
             <p>
               tutorials, beats, and serum presets
             </p>

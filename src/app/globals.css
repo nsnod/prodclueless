@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'zing';
+  src: url('./fonts/Zing\ Diddly\ Doo\ Zapped.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +30,7 @@ body {
 }
 
 .logoContainer img {
-  width: 80vw;
+  width: 60vw;
   height: auto;
   z-index: 9;
 }
@@ -49,7 +56,8 @@ body {
 .eyeContainer {
   position: relative;
   width: 90vw;
-  margin: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
 }
 
 .eyeWrapper {
@@ -117,15 +125,11 @@ body {
   z-index: 1; /* Ensure it stays on top of the background */
 }
 
-.bioSection h2 {
-  font-size: clamp(1.8rem, 2.5vw, 3rem);
-  margin-bottom: 1rem;
-  color: #333;
-}
-
 .bioSection p {
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(3.5vw, 3.5vw, 10vw);
+  margin-top: 8rem;
   margin-bottom: 2rem;
+  font-family: 'zing', sans-serif;
 }
 
 .socialIcons {
@@ -164,7 +168,7 @@ body {
 
 .footer-content {
   padding: 1rem;
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem); 
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .footer-logo {
