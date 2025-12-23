@@ -99,7 +99,7 @@ function App() {
             rel="noopener noreferrer"
             className="footer-link"
           >
-            mistcreep
+            noah snod
           </a>
         </div>
       </footer>
