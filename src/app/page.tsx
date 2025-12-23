@@ -80,9 +80,6 @@ function App() {
               <a href="https://soundcloud.com/clueless27" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <img src="soundcloud.png" alt="SoundCloud" />
               </a>
-              <a href="https://www.fiverr.com/prodclueless/mix-and-produce-your-music-with-a-professional-sound?utm_campaign=gigs_show&utm_medium=shared&utm_source=copy_link&utm_term=b4ebbk" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <img src="fiver.png" alt="Fiverr" />
-              </a>
               <a href="https://www.instagram.com/prodclueless/" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <img src="instagram.png" alt="Instagram" />
               </a>
@@ -97,7 +94,7 @@ function App() {
         <div className="footer-content">
           made by{' '}
           <a
-            href="https://mistcreep.com"
+            href="https://noahsnod.com"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
